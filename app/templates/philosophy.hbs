@@ -10,13 +10,3 @@
 </div>
 
 {{booking-button page="the-red" buttonText="Book an adventure"}}
-
-{{#if isShowingModal}}
-	{{#modal-dialog
-		close='toggleModal'
-		container-class='ember-modal-container'
-		overlay-class='modal-container-overlay modal-visible'
-	}}
-			{{partial 'mailing-list-modal'}}
-  {{/modal-dialog}}
-{{/if}}
