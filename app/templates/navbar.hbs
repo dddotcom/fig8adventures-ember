@@ -1,0 +1,12 @@
+<div id="site-nav" class="site-nav">
+  <ul class="left-nav">
+    {{#link-to 'index' tagName="li"}}<a href="">FIGURE EIGHT</a>{{/link-to}}
+    {{#link-to 'the-red' tagName="li"}}<a href="">Red River Gorge 2017</a>{{/link-to}}
+    {{#link-to 'faq' tagName="li"}}<a href="">Trip FAQ</a>{{/link-to}}
+  </ul>
+  <ul class="right-nav">
+    {{#link-to 'philosophy' tagName="li"}}<a href="">Philosophy</a>{{/link-to}}
+    {{#link-to 'our-team' tagName="li"}}<a href="">Our Team</a>{{/link-to}}
+    <li><a {{action "toggleModal"}}>Join The Mailing List</a></li>
+  </ul>
+</div>

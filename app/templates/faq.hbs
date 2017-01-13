@@ -1,0 +1,59 @@
+<script>
+$(document).ready(function(){
+	$("#question-1").click(function(){
+    	$("#answer-1").toggle();
+	});
+	$("#question-2").click(function(){
+    	$("#answer-2").toggle();
+	});
+	$("#question-3").click(function(){
+    	$("#answer-3").toggle();
+	});
+	$("#question-4").click(function(){
+    	$("#answer-4").toggle();
+	});
+	$("#question-5").click(function(){
+    	$("#answer-5").toggle();
+	});
+	$("#question-6").click(function(){
+    	$("#answer-6").toggle();
+	});
+});
+</script>
+
+
+<div class="hero-section faq-hero-section">
+	{{partial 'navbar'}}
+	<div class="hero-message-container">
+		<h1 class="display-text-x">Trip FAQ</h1>
+	</div>
+</div>
+
+<div class="page-container">
+	<div class="faq-question">
+		<h4 id="question-1">Who should travel with Figure Eight?</h4>
+		<p id="answer-1" class="answer" style="display: none;">Figure Eight is perfect for gym climbers who are able to lead climb at least 5.9 indoors. Our average client has climbed for 1-2 years, and is looking to make one of their first serious outdoor trips. We make it easy to explore a new area by combining our expertise with excellent planning and trip logistics. Experienced climbers may choose to climb with Figure Eight for an introduction to an unfamiliar crag, or to take a luxurious climbing "vacation" with friends. Beginners are welcome on Figure Eight trips when accompanied by an experienced friend.</p>
+	</div>
+	<div class="faq-question">
+		<h4 id="question-2">What kinds of rock climbing does Figure Eight support?</h4>
+		<p id="answer-2" class="answer" style="display: none;">Most of our trips focus on sport climbing, though trad and bouldering routes may be included with enough group interest.</p>
+	</div>
+	<div class="faq-question">
+		<h4 id="question-3">Do I have to arrange my own transportation?</h4>
+		<p id="answer-3" class="answer" style="display: none;">You are responsible for getting to the lodge or otherwise specified meet up location, though we will provide details directions and contacts for carpooling or arranging airfare! Once on location, we will handle transport to and from the crag for those without their own vehicles. </p>
+	</div>
+	<div class="faq-question">
+		<h4 id="question-4">What do I need to bring?</h4>
+		<p id="answer-4" class="answer" style="display: none;">You'll need to supply your own harness, shoes, belay device, and headlamp. We'll remind you of the weather forecast for your trip, but please dress responsibly for hot afternoons or cold nights! Most locations have either swimming holes, hot springs, or hot tubs &mdash; so bring your swimsuit, too. Other optional items: beverages, board games, good music. Things you can leave at home: rope, deli meat, towels, bed linens, worries, Mountain Project printouts.</p>
+	</div>
+	<div class="faq-question">
+		<h4 id="question-5">What's included in the cost of a trip?</h4>
+		<p id="answer-5" class="answer" style="display: none;">Our standard trip fee is $500 per person and covers 24/7 guide access for the weekend, lodging for two nights at a premium cabin, three square meals a day, transportation, and full-service planning help before your trip.</p>
+	</div>
+	<div class="faq-question">
+		<h4 id="question-6">Can you help me plan a longer, custom trip?</h4>
+		<p id="answer-6" class="answer" style="display: none;">Yes! Please contact us for further information.</p>
+	</div>
+</div>
+
+{{booking-button page="the-red" buttonText="Book an adventure"}}

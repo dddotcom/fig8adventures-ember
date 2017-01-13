@@ -1,0 +1,26 @@
+<div class="hero-section faq-hero-section">
+	{{partial 'navbar'}}
+	<div class="hero-message-container">
+		<h1 class="display-text-x">Philosophy</h1>
+	</div>
+</div>
+
+<div class="page-container">
+	<p>The team at Figure Eight is focused on providing a catered full service adventure experience to clients. Taking advantage of our expertise in technical adventure we add value by enhancing and offering new experiences otherwise unavailable to average client. We specialize in safety, service, expertise in adventure, experiences, and making memories.</p>
+
+<p>Good people and quality of service are key to our business. We also strive to provide the best tailored recommendations (climbing and otherwise), pristine lodging, and awesome food.</p>
+
+<p>We are committed to the safety of our participants as well as the safety and longevity of the beautiful lands that make rock climbing possible. Our guides are certified in technique and wilderness first aid by the American Mountain Guides Association, and 5% of our proceeds go to local environmental and climbing access organizations such as Friends of Muir Valley and The Access Fund. </p>
+</div>
+
+{{booking-button page="the-red" buttonText="Book an adventure"}}
+
+{{#if isShowingModal}}
+	{{#modal-dialog
+		close='toggleModal'
+		container-class='ember-modal-container'
+		overlay-class='modal-container-overlay modal-visible'
+	}}
+			{{partial 'mailing-list-modal'}}
+  {{/modal-dialog}}
+{{/if}}
